@@ -1,4 +1,4 @@
-package pers.yanxuanshaozhu.corejava08.ch08_pair1;
+package pers.yanxuanshaozhu.corejavach08.ch08_pair1;
 
 public class PairTest1 {
 	public static void main(String[] args) {

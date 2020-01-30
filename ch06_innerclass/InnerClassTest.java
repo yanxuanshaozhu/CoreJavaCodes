@@ -1,4 +1,4 @@
-package pers.yanxuanshaozhu.corejava06.ch06_innerclass;
+package pers.yanxuanshaozhu.corejavach06.ch06_innerclass;
 
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;

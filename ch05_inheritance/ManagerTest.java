@@ -11,12 +11,13 @@ public class ManagerTest {
 
 		// staff[0].setBonus(5000) 錯誤，編譯類型是Employee,運行類型才是boss。
 		// ((Manager) staff[0]).setBonus(5000) 也是可以的
-		
+
 		staff[1] = new Employee("Ruan Zheng", 17000, 2018, 10, 1);
 		staff[2] = new Employee("Jing Wang", 16000, 2017, 1, 11);
 
 		for (Employee e : staff) {
 			System.out.println(e);
 		}
+
 	}
 }

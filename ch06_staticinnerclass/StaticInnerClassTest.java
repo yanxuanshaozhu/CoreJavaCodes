@@ -1,4 +1,4 @@
-package pers.yanxuanshaozhu.corejava06.ch06_staticinnerclass;
+package pers.yanxuanshaozhu.corejavach06.ch06_staticinnerclass;
 
 public class StaticInnerClassTest {
 	public static void main(String[] args) {

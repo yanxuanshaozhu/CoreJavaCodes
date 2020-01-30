@@ -16,5 +16,12 @@ public class ArrayListTest {
 		for (Employee e : staff) {
 			System.out.println(e);
 		}
+		
+		System.out.println("**************");
+		Employee[]  employees = new Employee[staff.size()];
+		staff.toArray(employees);
+		for (Employee employee : employees) {
+			System.out.println(employee);
+		}
 	}
 }

@@ -1,4 +1,4 @@
-package pers.yanxuanshaozhu.corejava07.ch07_stacktrace;
+package pers.yanxuanshaozhu.corejavach07.ch07_stacktrace;
 
 import java.util.Scanner;
 

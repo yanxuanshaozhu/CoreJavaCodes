@@ -1,4 +1,4 @@
-package pers.yanxuanshaozhu.corejava07.ch07_logging;
+package pers.yanxuanshaozhu.corejavach07.ch07_logging;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

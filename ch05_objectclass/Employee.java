@@ -50,7 +50,8 @@ public class Employee {
 			return false;
 		}
 		Employee other = (Employee) obj;
-		return Objects.equals(name, other.name) && this.salary == other.salary && Objects.equals(hireDate, other.hireDate);
+		return Objects.equals(name, other.name) && this.salary == other.salary
+				&& Objects.equals(hireDate, other.hireDate);
 	}
 
 	public int hashCode() {
@@ -58,8 +59,8 @@ public class Employee {
 	}
 
 	@Override
-	public String toString() {//getClass返回的是運行時類/字節碼文件的class文件的類名，這個比較無語，是帶著全限定類名的
-		return getClass().getName() + "[name=" + name + ", salary=" + salary + ", hireDate=" + hireDate + "]";
+	public String toString() {// getClass返回的是運行時類/字節碼文件的class文件的類名，這個比較無語，是帶著全限定類名的
+		return getClass().getSimpleName() + "[name=" + name + ", salary=" + salary + ", hireDate=" + hireDate + "]";
 	}
 
 }

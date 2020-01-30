@@ -23,6 +23,13 @@ public class EqualsTest {
 		System.out.println("employee3.hashCode " + employee3.hashCode());
 		System.out.println("manager1.hashCode " + manager1.hashCode());
 		System.out.println("manager2.hashCode " + manager2.hashCode());
+		
+		
+		System.out.println("********************");
+		Employee employee5 = new Employee("Jing Tang", 20000, 2018, 12, 24);
+		Manager manager3 = new Manager("Jing Tang", 20000, 2018, 12, 24);
+		manager3.setBonus(5000);
+		System.out.println(employee5.equals(manager3));
 
 	}
 }

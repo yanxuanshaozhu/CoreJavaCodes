@@ -17,6 +17,7 @@ public class CopyOfTest {
 		}
 		Class componentType = cl.getComponentType();
 		int length = Array.getLength(a);
+		//這裏實際上是用反射創建了一個componentType類型的數組，返回Object只是一個多態引用
 		Object newArray = Array.newInstance(componentType, newLength);
 		System.arraycopy(a, 0, newArray, 0, Math.min(newLength, length));
 		return newArray;
