@@ -12,6 +12,7 @@ public class Sieve {
 		for (i = 2; i <= n; i++) {
 			b.set(i);
 		}
+		i = 2;
 		while (i * i < n) {
 			if (b.get(i)) {
 				count++;
