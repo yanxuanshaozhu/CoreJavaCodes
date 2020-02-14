@@ -56,12 +56,12 @@ public class DownstreamCollectors {
 				.collect(Collectors.groupingBy(Locale::getCountry, Collectors.counting()));
 		System.out.println("countryToLocaleCounts: " + countryToLocaleCounts);
 
-		Stream<City> cities = readCities("cities.txt");
+		Stream<City> cities = readCities("./src/pers/yanxuanshaozhu/corejavach15/ch15_collecting3/cities.txt");
 		Map<String, Integer> stateToCityPopulation = cities
 				.collect(Collectors.groupingBy(City::getState, Collectors.summingInt(City::getPopulation)));
 		System.out.println("stateToCityPopulation: " + stateToCityPopulation);
 
-		cities = readCities("cities.txt");
+		cities = readCities("./src/pers/yanxuanshaozhu/corejavach15/ch15_collecting3/cities.txt");
 		Map<String, Optional<String>> stateToLongestCityName = cities.collect(Collectors.groupingBy(City::getState,
 				Collectors.mapping(City::getName, Collectors.maxBy(Comparator.comparing(String::length)))));
 
@@ -72,16 +72,16 @@ public class DownstreamCollectors {
 				Collectors.mapping(Locale::getDisplayLanguage, Collectors.toSet())));
 		System.out.println("countryToLanguages: " + countryToLanguages);
 
-		cities = readCities("cities.txt");
+		cities = readCities("./src/pers/yanxuanshaozhu/corejavach15/ch15_collecting3/cities.txt");
 		Map<String, IntSummaryStatistics> stateToCityPopulationSummary = cities
 				.collect(Collectors.groupingBy(City::getState, Collectors.summarizingInt(City::getPopulation)));
 		System.out.println(stateToCityPopulationSummary.get("NY"));
 
-		cities = readCities("cities.txt");
+		cities = readCities("./src/pers/yanxuanshaozhu/corejavach15/ch15_collecting3/cities.txt");
 		Map<String, String> stateToCityNames = cities.collect(Collectors.groupingBy(City::getState,
 				Collectors.reducing("", City::getName, (s, t) -> s.length() == 0 ? t : s + ", " + t)));
 
-		cities = readCities("cities.txt");
+		cities = readCities("./src/pers/yanxuanshaozhu/corejavach15/ch15_collecting3/cities.txt");
 		stateToCityNames = cities.collect(
 				Collectors.groupingBy(City::getState, Collectors.mapping(City::getName, Collectors.joining(", "))));
 		System.out.println("stateToCityNames: " + stateToCityNames);
