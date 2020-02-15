@@ -3,6 +3,7 @@ package pers.yanxuanshaozhu.corejavach16.ch16_textfile;
 import java.time.LocalDate;
 
 public class Employee {
+
 	private String name;
 	private double salary;
 	private LocalDate hireDate;
@@ -37,8 +38,8 @@ public class Employee {
 		return hireDate;
 	}
 
-	public void setHireDate(LocalDate hireDate) {
-		this.hireDate = hireDate;
+	public void setHireDate(int year, int month, int day) {
+		this.hireDate = LocalDate.of(year, month, day);
 	}
 
 	@Override

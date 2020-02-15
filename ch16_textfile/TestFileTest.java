@@ -6,8 +6,6 @@ import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-import sun.nio.cs.ext.IBM037;
-
 public class TestFileTest {
 	public static void main(String[] args) throws IOException {
 		Employee[] staff = new Employee[3];
