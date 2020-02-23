@@ -17,7 +17,7 @@ public class TestDb {
 			TestDb.runTest();
 		} catch (SQLException e) {
 			for (Throwable throwable : e) {
-				e.printStackTrace();
+				throwable.printStackTrace();
 			}
 		}
 	}

@@ -43,14 +43,14 @@ public class ExecSQL {
 						}
 					} catch (SQLException e) {
 						for (Throwable throwable : e) {
-							e.printStackTrace();
+							throwable.printStackTrace();
 						}
 					}
 				}
 			}
 		} catch (SQLException e) {
 			for (Throwable throwable : e) {
-				e.printStackTrace();
+				throwable.printStackTrace();
 			}
 		}
 	}

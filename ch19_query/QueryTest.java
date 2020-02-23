@@ -69,7 +69,7 @@ public class QueryTest {
 			}
 		} catch (SQLException e) {
 			for (Throwable throwable : e) {
-				System.out.println(e.getMessage());
+				System.out.println(throwable.getMessage());
 			}
 		}
 	}
